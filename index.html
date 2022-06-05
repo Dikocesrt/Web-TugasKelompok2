@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tugas Kelompok 2</title>
+	<link rel="stylesheet" href="style2.css">
+	<script type="text/javascript">
+		function Login(){
+
+		var username=document.login.username.value;
+		var password=document.login.password.value;
+
+		if (username=="Muhammad Syafiiq"){
+			if (password=="2100018245"){
+				alert("Selamat datang di MyWebsite Muhammad Syafiiq ^-^");
+				window.location.href = "mainweb.html";
+			}
+			else{
+				alert("Password anda salah!");
+			}
+		}
+
+		else if (username=="Mahardiko Cesartista"){
+			if (password=="2100018254"){
+				alert("Selamat datang di MyWebsite Mahardiko Cesartista ^-^");
+				window.location.href = "mainweb.html";
+			}
+			else{
+				alert("Password anda salah!");
+			}
+		}
+
+		else{
+			alert("Username dan/atau Password anda salah!");
+		}
+
+		return false;
+		}
+	</script>
+</head>
+<body background="Kubik.jpg">
+	<div class="kotak-login">
+		<h2 class="tulisan-login">MyWebsite</h2>
+		<p class="tulisan-login">Silahkan login</p>
+		<form name="login">
+			<label>Username</label>
+			<input type="text" name="username" class="form-login" placeholder="Username">
+			<label>Password</label>
+			<input type="text" name="password" class="form-login" placeholder="Password">
+			<input type="button" value="Login" class="tombol-login" onClick="Login()"></td></tr>
+		</form>
+	</div>
+</body>
+</html>
